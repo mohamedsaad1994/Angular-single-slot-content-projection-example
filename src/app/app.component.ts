@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'login-app';
+  usernameParent : String = "";
+  passwordParent : String = "";
+
+  getData(data){
+    this.usernameParent=data.user;
+    this.passwordParent=data.pass;
+  }
 }
